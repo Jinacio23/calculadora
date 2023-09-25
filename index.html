@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;300;600;700&family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Calculadora Simples</h1>
+    </header>
+    <main>
+        <input id="display" type="text">
+        <div class="board">
+
+            <button class="btn" id="clear">C</button>
+            <button class="btn" onclick="getValue('(')">(</button>
+            <button class="btn" onclick="getValue(')')">)</button>
+            <button class="btn" onclick="percent()">%</button>
+
+
+            <button class="btn" onclick="getValue(9)">9</button>
+            <button class="btn" onclick="getValue(8)">8</button>
+            <button class="btn" onclick="getValue(7)">7</button>
+            <button class="btn" onclick="getValue('/')">/</button>
+
+
+            <button class="btn" onclick="getValue(6)">6</button>
+            <button class="btn" onclick="getValue(5)">5</button>
+            <button class="btn" onclick="getValue(4)">4</button>
+            <button class="btn" onclick="getValue('*')">*</button>
+
+
+            <button class="btn" onclick="getValue(3)">3</button>
+            <button class="btn" onclick="getValue(2)">2</button>
+            <button class="btn" onclick="getValue(1)">1</button>
+            <button class="btn" onclick="getValue('-')">-</button>
+
+            <button class="btn" onclick="getValue(0)">0</button>
+            <button class="btn" onclick="getValue('.')">.</button>
+            <button class="btn igual" onclick="result('=')">=</button>
+            <button class="btn" onclick="getValue('+')">+</button>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
